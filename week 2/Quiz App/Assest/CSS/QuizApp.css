@@ -1,0 +1,227 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 10px;
+}
+
+.quiz-container {
+  background-color: #e0f7fa;
+  border: 2px solid #4db6ac;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #00796b;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+#question {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.options {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.options .labels {
+  display: block;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+#result {
+  font-size: 1.1rem;
+  margin-top: 10px;
+}
+
+.restart-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: none;
+}
+
+.restart-btnDisplay {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+ 
+}
+
+.restart-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Styling for the label */
+.labels {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 16px;
+  color: #333;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+}
+
+/* Additional styling for options inside labels */
+.options {
+  margin-left: 2px;
+}
+
+/* Styling for the radio input */
+.opt {
+  margin-right: 10px;
+}
+
+/* Add hover effect on label */
+.labels:hover {
+  background-color: #e0e0e0;
+  border-color: #bbb;
+}
+
+/* Style for checked radio button */
+.opt:checked + label {
+  background-color: #d1e7dd;
+}
+
+.inputs {
+  margin: 2px;
+}
+
+
+.end-message {
+  background-color: #e0f7fa;
+  border: 2px solid #4db6ac;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #00796b;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .quiz-container {
+    width: 90%;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  #question {
+    font-size: 1rem;
+  }
+
+  .labels {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  #result {
+    font-size: 1rem;
+  }
+
+  .end-message {
+    font-size: 1rem;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .quiz-container {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 1.3rem;
+  }
+
+  #question {
+    font-size: 0.9rem;
+  }
+
+  .labels {
+    font-size: 12px;
+    padding: 6px;
+  }
+
+  button {
+    font-size: 12px;
+    padding: 6px;
+  }
+
+  #result {
+    font-size: 0.9rem;
+  }
+
+
+   .end-message {
+    font-size: 1rem;
+    padding: 15px;
+  }
+
+  .restart-btn {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+
+  .end-message {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+}
+
+
